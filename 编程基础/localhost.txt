@@ -1,0 +1,5 @@
+PassengerId,Pclass,Name,Sex
+892,3,Kelly,male
+893,3,Wilkes,female
+894,2,Myles,male
+895,3,Wirz,male
