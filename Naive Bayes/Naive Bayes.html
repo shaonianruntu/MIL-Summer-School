@@ -13089,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13644,7 +13644,7 @@ p0Denom:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>在前面，我们已经通过训练集计算出了朴素贝叶斯的先验概率和条件概率。</p>
-<p>我们需要使用这两个计算出来的概率值来计算当我们的 $\textbf{w}$ 选取为新的测试集的词向量矩阵 $\textbf{new_w}$ 时的后验概率 $p(c_i|\textbf{new_w})$。同时比较，$p(c_1|\textbf{new_w})$ 和 $p(c_2|\textbf{new_w})$ 的值哪个更大，比较返回大概率对应的标签，作为我们的分类器的预测结果。</p>
+<p>我们需要使用这两个计算出来的概率值来计算当我们的 $\textbf{w}$ 选取为新的测试集的词向量矩阵 $\textbf{new_w}$ 时的后验概率 $p(c_i|\textbf{new_w})$。同时比较，$p(c_0|\textbf{new_w})$ 和 $p(c_1|\textbf{new_w})$ 的值哪个更大，比较返回大概率对应的标签，作为我们的分类器的预测结果。</p>
 <p>⚠️ 在使用 <em>trainNB0 function</em> 计算概率的时候，我们使用了取 log 代替了分数，这样对于原式 $p(\textbf{w}|c_i)$ = $p(w_0,w_1,...,w_N|c_i)$ = $p(w_0|c_i)p(w_1|c_i)...p(w_N|c_i)$，就变成了 $log(p(w_0|c_i)) + log(p(w_1|c_i)) + ... + log(p(w_N|c_i))$</p>
 
 </div>
